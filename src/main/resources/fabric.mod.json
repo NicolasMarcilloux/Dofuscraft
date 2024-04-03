@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dofuscraft",
+	"version": "${version}",
+	"name": "dofuscraft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/NicolasMarcilloux/Dofuscraft"
+	},
+	"license": "MIT",
+	"icon": "assets/dofuscraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.tartiflex.dofuscraft.Dofuscraft"
+		],
+		"client": [
+			"com.tartiflex.dofuscraft.DofuscraftClient"
+		],
+		"fabric-datagen": [
+			"com.tartiflex.dofuscraft.DofuscraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"dofuscraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
